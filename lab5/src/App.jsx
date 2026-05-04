@@ -2,11 +2,15 @@ import React, { useState } from "react";
 import FigureList from "./components/FigureList";
 import "./App.css";
 
+import reactImg from "./react.jpg";
+import mongodbImg from "./mongodb.png";
+import nodeImg from "./node.png";
+
 const App = () => {
   const [figures, setFigures] = useState([
-    { id: 1, url: "/react.jpg", caption: "React" },
-    { id: 2, url: "/mongodb.png", caption: "Mongo DB" },
-    { id: 3, url: "/node.png", caption: "Node JS" },
+    { id: 1, url: reactImg, caption: "React" },
+    { id: 2, url: mongodbImg, caption: "Mongo DB" },
+    { id: 3, url: nodeImg, caption: "Node JS" },
   ]);
 
   const addFigure = () => {

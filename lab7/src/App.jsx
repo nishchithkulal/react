@@ -2,8 +2,10 @@ import React from "react";
 import ProfileCard from "./ProfileCard";
 import "./App.css";
 
+import profile from "./profile.webp";
+
 const App = () => {
-  const profilePic = "./hero.png";
+  const profilePic = profile;
   return (
     <div>
       <div
