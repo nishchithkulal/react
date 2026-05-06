@@ -16,7 +16,7 @@ const App = () => {
   const addFigure = () => {
     const newFigure = {
       id: Date.now(),
-      url: "./react.jpg",
+      url: reactImg,
       caption: "New Image",
     };
     setFigures([...figures, newFigure]);
