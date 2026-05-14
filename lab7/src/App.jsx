@@ -1,8 +1,8 @@
 import React from "react";
-import ProfileCard from "./ProfileCard";
+import ProfileCard from "./components/ProfileCard";
 import "./App.css";
 
-import profile from "./profile.webp";
+import profile from "./assets/profile.webp";
 
 const App = () => {
   const profilePic = profile;
