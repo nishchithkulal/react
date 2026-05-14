@@ -44,7 +44,7 @@ const ToDoFunction = () => {
                             onClick={()=> toggleTask(index)} 
                             style={{
                                 textDecoration: t.completed?"line-through":"none", 
-                                color: t.completed?"green":"black",
+                                color: t.completed?"green":"",
                                 cursor: "pointer"
                             }}
                         >{t.task}</span>
