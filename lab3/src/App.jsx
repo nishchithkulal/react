@@ -28,7 +28,8 @@ const App = () => {
         <button
           onClick={() => decreaseCount()}
           style={styles.button}
-          disabled={count === 0}>
+          disabled={count === 0}
+        >
           -
         </button>
         <button onClick={() => resetCount()} style={styles.button}>
