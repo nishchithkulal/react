@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, NavLink } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  NavLink,
+} from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -9,19 +14,35 @@ export default function App() {
   return (
     <Router>
       <div className="app-container">
-        {/* Navbar */}
         <nav className="navbar">
-          <NavLink to="/" end className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+          <NavLink
+            to="/"
+            end
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
             Home
           </NavLink>
-          <NavLink to="/about" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}> About
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
+            {" "}
+            About
           </NavLink>
-          <NavLink to="/contact" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
             Contact
           </NavLink>
         </nav>
 
-        {/* Page Content */}
         <main className="page-content">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -30,11 +51,7 @@ export default function App() {
           </Routes>
         </main>
 
-
-        {/* Footer */}
-        <footer className="footer">
-          © CSD@CEC.
-        </footer>
+        <footer className="footer">&copy; CSD@CEC.</footer>
       </div>
     </Router>
   );
